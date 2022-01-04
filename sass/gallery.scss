@@ -1,0 +1,61 @@
+@import "headFoot";
+$bg: chartreuse;
+$g: brown;
+$a: rgb(63, 165, 42);
+$l: rgb(79, 42, 165);
+$l: rgb(245, 54, 7);
+$e: rgb(235, 192, 3);
+$r: rgb(245, 4, 193);
+$y: rgb(250, 8, 8);
+$hightt: 40rem;
+body {
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 0, 0, 0),
+    rgb(253, 235, 235),
+    rgb(218, 249, 252)
+  );
+}
+.bi-flower3 {
+  color: $bg;
+}
+.img-higt {
+  height: $hightt;
+}
+.brown {
+  color: $g;
+}
+.green {
+  color: $a;
+}
+.blue {
+  color: $l;
+}
+.red {
+  color: $l;
+}
+.yellow {
+  color: $e;
+}
+.pink {
+  color: $r;
+}
+.deepred {
+  color: $y;
+}
+.fw-light {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-weight: 500;
+  text-align: justify;
+}
+img {
+  opacity: 0.7;
+  &:hover {
+    transform: scaleX(-1);
+    transition: 3s;
+  }
+}
+.jasmin {
+  height: 45%;
+}

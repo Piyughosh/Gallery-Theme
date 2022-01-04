@@ -1,0 +1,127 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar-nav {
+  margin-right: 6%;
+}
+
+.animate {
+  position: relative;
+  -webkit-animation-name: mate;
+          animation-name: mate;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  animation-direction: alternate-reverse;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes mate {
+  0% {
+    color: red;
+  }
+  25% {
+    color: #f4f80f;
+  }
+  50% {
+    color: blue;
+  }
+  75% {
+    color: lime;
+  }
+  100% {
+    color: #ff00bf;
+  }
+}
+
+@keyframes mate {
+  0% {
+    color: red;
+  }
+  25% {
+    color: #f4f80f;
+  }
+  50% {
+    color: blue;
+  }
+  75% {
+    color: lime;
+  }
+  100% {
+    color: #ff00bf;
+  }
+}
+
+body {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 0, 0, 0)), color-stop(#fdebeb), to(#daf9fc));
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0), #fdebeb, #daf9fc);
+}
+
+.bi-flower3 {
+  color: chartreuse;
+}
+
+.img-higt {
+  height: 40rem;
+}
+
+.brown {
+  color: brown;
+}
+
+.green {
+  color: #3fa52a;
+}
+
+.blue {
+  color: #f53607;
+}
+
+.red {
+  color: #f53607;
+}
+
+.yellow {
+  color: #ebc003;
+}
+
+.pink {
+  color: #f504c1;
+}
+
+.deepred {
+  color: #fa0808;
+}
+
+.fw-light {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-weight: 500;
+  text-align: justify;
+}
+
+img {
+  opacity: 0.7;
+}
+
+img:hover {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+  -webkit-transition: 3s;
+  transition: 3s;
+}
+
+.jasmin {
+  height: 45%;
+}
+/*# sourceMappingURL=gallery.css.map */

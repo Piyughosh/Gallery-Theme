@@ -1,0 +1,103 @@
+@import "headFoot";
+$bg: chartreuse;
+$bordercolor: rgb(182, 102, 210);
+$h2color: #696969;
+$bgcolor: orange;
+$backcolor: #46344e;
+$frmcolor: rgb(224, 224, 235);
+$shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4), 0 8px 20px 5px rgba(0, 0, 0, 20);
+.bi-flower3 {
+  color: $bg;
+}
+.d-block {
+  height: 42rem;
+}
+.carousel-caption {
+  margin-bottom: 15rem;
+  font-size: 2rem;
+}
+.fa-angle-double-down {
+  color: #46344e;
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 4rem;
+  background-color: white;
+}
+h2 {
+  .widget-title {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $h2color;
+    font-family: "Syncopate", sans-serif;
+  }
+  .about-border {
+    background-color: $bordercolor;
+    height: 4px;
+    width: 6%;
+    margin-left: 47%;
+    margin-top: -3%;
+  }
+}
+.fw-light {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-weight: 500;
+  text-align: justify;
+}
+.bgcolr {
+  background-color: $bgcolor;
+  box-shadow: $shadow;
+  .card2 {
+    box-shadow: $shadow;
+    width: 18rem;
+  }
+}
+.readmore {
+  line-height: 2;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+  padding: 0 10px;
+  text-align: center;
+}
+.card3 {
+  box-shadow: $shadow;
+  width: 18rem;
+  height: 220px;
+}
+.formbgcolor {
+  background-color: $frmcolor;
+  .frmbgclr {
+    background-color: $backcolor;
+    color: white;
+  }
+  .border-secondary {
+    background-color: $backcolor;
+    color: white;
+  }
+  .frm_side {
+    text-align: justify;
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
+}
+.greeting-wrapper {
+  h2 {
+    width: 0ch;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: text 6s steps(22) infinite alternate;
+    margin: auto;
+    border-right: 2px solid black;
+    font-size: 35px;
+  }
+  @keyframes text {
+    0% {
+      width: 0ch;
+    }
+    50% {
+      width: 22ch;
+    }
+  }
+}

@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Shop</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href=" https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css " rel="stylesheet "
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC " crossorigin="anonymous ">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js "
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM "
+    crossorigin="anonymous "></script>
+  <link rel="stylesheet " href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css ">
+  <script src="https://code.iconify.design/2/2.0.3/iconify.min.js "></script>
+  <link rel="stylesheet " href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css ">
+  <link rel="preconnect " href="https://fonts.googleapis.com ">
+  <link rel="preconnect " href="https://fonts.gstatic.com " crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syncopate&display=swap " rel="stylesheet ">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300&family=Syncopate&display=swap "
+    rel="stylesheet ">
+  <link rel="stylesheet " href="../sass/shop.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+  <script src="../js/nav.js"></script>
+  <script src="../js/addCart.js"></script>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><i class="bi bi-flower3"></i>FLOWERS</a>
+      <div class="d-none d-lg-block ms-2">
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="INPUT_ID">
+          <button class="btn btn-outline-success" type="submit" onclick="valid();">Search</button>
+        </form>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+        <div class="navbar-nav ms-auto">
+          <a class=" nav-link " aria-current="page " href="home.html">Home</a>
+          <a class="nav-link active  " href="shop.html">Shop</a>
+          <a class="nav-link " href="gallery.html ">Gallery</a>
+          <a class="nav-link " href="services.html ">Services</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!--content-->
+  <div class="container mt-3">
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Our Shop</h3>
+        <h3 class="mt-3">Available Store</h3>
+        <h3 class="mt-3" style="display: inline-block; ">Showing 1–16 of 23 results</h3>
+      </div>
+      <div class="col-md-6  d-none d-sm-block ">
+        <form method="get " style="float:right ">
+          <select name="orderby " class="orderby rounded-3" aria-label="Shop order ">
+            <option value="menu_order " selected='selected'>Default sorting</option>
+            <option value="popularity ">Sort by popularity</option>
+            <option value="rating ">Sort by average rating</option>
+            <option value="date ">Sort by latest</option>
+            <option value="price ">Sort by price: low to high</option>
+            <option value="price-desc ">Sort by price: high to low</option>
+          </select>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="container mb-4 mt-4 ">
+    <div class="row mb-5 ">
+      <div class="col-sm-3 my-2 ">
+        <div class="card">
+          <img class="card-img-top " src="../images/shop-img/shop1.jpg " alt="Card image cap ">
+          <aside class="widgetext">
+            <h3 class="widgettitle ">Tailored Jeans</h3>
+            <p class="widgettitle ">$19.99</p>
+            <p><i class="bi bi-star-fill "></i>
+              <i class="bi bi-star-fill "></i>
+              <i class="bi bi-star-fill "></i>
+              <i class="bi bi-star-fill "></i>
+              <i class="bi bi-star-half "></i>
+            </p>
+          </aside>
+          <button onclick="increase();">Add to Cart</button>
+        </div>
+      </div>
+      <div class="col-sm-3 my-2 ">
+        <div class="card">
+          <img class="card-img-top " src="../images/shop-img/shop2.jpg " alt="Card image cap ">
+          <aside class="widgetext ">
+            <h3 class="widgettitle ">Tailored Jeans</h3>
+            <p class="widgettitle ">$19.99</p>
+            <p><i class="bi bi-star-fill "></i>
+              <i class="bi bi-star-fill "></i>
+              <i class="bi bi-star-fill "></i>
+              <i class="bi bi-star-fill "></i>
+              <i class="bi bi-star-fill "></i>
+            </p>
+          </aside>
+          <button onclick="increase();">Add to Cart</button>
+        </div>
+      </div>
+      <div class="col-sm-3 my-2 ">
+        <div class="card">
+          <img class="card-img-top " src="../images/shop-img/shop3.jpg " alt="Card image cap ">
+          <aside class="widgetext ">
+            <h3 class="widgettitle ">Tailored Jeans</h3>
+            <p class="widgettitle ">$19.99</p>
+            <p><i class="bi bi-star-fill "></i>
+              <i class="bi bi-star-fill "></i>
+              <i class="bi bi-star-fill "></i>
+              <i class="bi bi-star-fill "></i>
+              <i class="bi bi-star "></i>
+            </p>
+          </aside>
+          <button onclick="increase();">Add to Cart</button>
+        </div>
+      </div>
+      <div class="col-sm-3 my-2 ">
+        <div class="card">
+          <img class="card-img-top " src="../images/shop-img/shop4.jpg " alt="Card image cap ">
+          <aside class="widgetext ">
+            <h3 class="widgettitle ">Tailored Jeans</h3>
+            <p class="widgettitle ">$19.99</p>
+            <p><i class="bi bi-star-fill "></i>
+              <i class="bi bi-star-fill "></i>
+              <i class="bi bi-star-fill "></i>
+              <i class="bi bi-star-fill "></i>
+              <i class="bi bi-star "></i>
+            </p>
+          </aside>
+          <button onclick="increase();">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="container mb-4 ">
+    <div class="row mb-5 ">
+      <div class="col-sm-3 my-2 ">
+        <div class="card">
+          <img class="card-img-top " src="../images/shop-img/shop5.jpg " alt="Card image cap ">
+          <aside class="widgetext ">
+            <h3 class="widgettitle ">Tailored Jeans</h3>
+            <p class="widgettitle ">$19.99</p>
+            <p><i class="bi bi-star-fill "></i>
+              <i class="bi bi-star-fill "></i>
+              <i class="bi bi-star-fill "></i>
+              <i class="bi bi-star-fill "></i>
+              <i class="bi bi-star-half "></i>
+            </p>
+          </aside>
+          <button onclick="increase();">Add to Cart</button>
+        </div>
+      </div>
+      <div class="col-sm-3 my-2 ">
+        <div class="card">
+          <img class="card-img-top " src="../images/shop-img/shop6.jpg " alt="Card image cap ">
+          <aside class="widgetext ">
+            <h3 class="widgettitle ">Tailored Jeans</h3>
+            <p class="widgettitle ">$19.99</p>
+            <p><i class="bi bi-star-fill "></i>
+              <i class="bi bi-star-fill "></i>
+              <i class="bi bi-star-fill "></i>
+              <i class="bi bi-star-fill "></i>
+              <i class="bi bi-star-fill "></i>
+            </p>
+          </aside>
+          <button onclick="increase();">Add to Cart</button>
+        </div>
+      </div>
+      <div class="col-sm-3 my-2 ">
+        <div class="card">
+          <img class="card-img-top " src="../images/shop-img/shop7.jpg " alt="Card image cap ">
+          <aside class="widgetext ">
+            <h3 class="widgettitle ">Tailored Jeans</h3>
+            <p class="widgettitle ">$19.99</p>
+            <p><i class="bi bi-star-fill "></i>
+              <i class="bi bi-star-fill "></i>
+              <i class="bi bi-star-fill "></i>
+              <i class="bi bi-star-fill "></i>
+              <i class="bi bi-star "></i>
+            </p>
+          </aside>
+          <button onclick="increase();">Add to Cart</button>
+        </div>
+      </div>
+      <div class="col-sm-3 my-2 ">
+        <div class="card">
+          <img class="card-img-top " src="../images/shop-img/shop8.jpg " alt="Card image cap ">
+          <aside class="widgetext ">
+            <h3 class="widgettitle ">Tailored Jeans</h3>
+            <p class="widgettitle ">$19.99</p>
+            <p><i class="bi bi-star-fill "></i>
+              <i class="bi bi-star-fill "></i>
+              <i class="bi bi-star-fill "></i>
+              <i class="bi bi-star-fill "></i>
+              <i class="bi bi-star "></i>
+            </p>
+          </aside>
+          <button onclick="increase();">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="container mb-4 ">
+    <div class="row mb-5 ">
+      <div class="col-sm-3 my-2 ">
+        <div class="card">
+          <img class="card-img-top " src="../images/shop-img/shop9.jpg " alt="Card image cap ">
+          <aside class="widgetext ">
+            <h3 class="widgettitle ">Tailored Jeans</h3>
+            <p class="widgettitle ">$19.99</p>
+            <p><i class="bi bi-star-fill "></i>
+              <i class="bi bi-star-fill "></i>
+              <i class="bi bi-star-fill "></i>
+              <i class="bi bi-star-fill "></i>
+              <i class="bi bi-star-half "></i>
+            </p>
+          </aside>
+          <button onclick="increase();">Add to Cart</button>
+        </div>
+      </div>
+      <div class="col-sm-3 my-2 ">
+        <div class="card">
+          <img class="card-img-top " src="../images/shop-img/shop10.jpg " alt="Card image cap ">
+          <aside class="widgetext ">
+            <h3 class="widgettitle ">Tailored Jeans</h3>
+            <p class="widgettitle ">$19.99</p>
+            <p><i class="bi bi-star-fill "></i>
+              <i class="bi bi-star-fill "></i>
+              <i class="bi bi-star-fill "></i>
+              <i class="bi bi-star-fill "></i>
+              <i class="bi bi-star-fill "></i>
+            </p>
+          </aside>
+          <button onclick="increase();">Add to Cart</button>
+        </div>
+      </div>
+      <div class="col-sm-3 my-2 ">
+        <div class="card">
+          <img class="card-img-top " src="../images/shop-img/shop11.jpg " alt="Card image cap ">
+          <aside class="widgetext ">
+            <h3 class="widgettitle ">Tailored Jeans</h3>
+            <p class="widgettitle ">$19.99</p>
+            <p><i class="bi bi-star-fill "></i>
+              <i class="bi bi-star-fill "></i>
+              <i class="bi bi-star-fill "></i>
+              <i class="bi bi-star-fill "></i>
+              <i class="bi bi-star "></i>
+            </p>
+          </aside>
+          <button onclick="increase();">Add to Cart</button>
+        </div>
+      </div>
+      <div class="col-sm-3 my-2 ">
+        <div class="card">
+          <img class="card-img-top " src="../images/shop-img/shop12.jpg " alt="Card image cap ">
+          <div class="widgetext ">
+            <h3 class="widgettitle ">Tailored Jeans</h3>
+            <p class="widgettitle ">$19.99</p>
+            <p><i class="bi bi-star-fill "></i>
+              <i class="bi bi-star-fill "></i>
+              <i class="bi bi-star-fill "></i>
+              <i class="bi bi-star-fill "></i>
+              <i class="bi bi-star "></i>
+            </p>
+          </div>
+          <button onclick="increase();">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container main-content-area d-none d-lg-block ">
+    <div class="row">
+      <div class="col-sm-12 col-md-8">
+        <aside>
+          <h3 class="widget-title">TOP RATED PRODUCTS</h3>
+          <h3 class="widget-title">
+            <div class="pulline"></div>
+          </h3>
+          <ul class="list-unstyled">
+            <li class="catlog"><a href="#" class="hov">Flower1</a><br />
+              <span class="iconify" data-icon="ic:sharp-star-rate"></span>
+              <span class="iconify" data-icon="ic:sharp-star-rate"></span>
+              <span class="iconify" data-icon="ic:sharp-star-rate"></span>
+              <span class="iconify" data-icon="ic:sharp-star-rate"></span>
+              <span class="iconify" data-icon="ic:sharp-star-rate"></span><br /> $ 20.00<span><img
+                  src="../images/shop-img/shop4.jpg" class="ig"></span>
+            </li>
+            <li class="catlog"><a href="#" class="hov">Flower2</a> <br />
+              <span class="iconify" data-icon="ic:sharp-star-rate"></span>
+              <span class="iconify" data-icon="ic:sharp-star-rate"></span>
+              <span class="iconify" data-icon="ic:sharp-star-rate"></span>
+              <span class="iconify" data-icon="ic:sharp-star-rate"></span>
+              <span class="iconify" data-icon="ic:sharp-star-rate"></span><br /> $ 30.00<span><img
+                  src="../images/shop-img/shop5.jpg" class="ig"></span>
+            </li>
+            <li class="catlog"><a href="#" class="hov">Flower3</a><br />
+              <span class="iconify" data-icon="ic:sharp-star-rate"></span>
+              <span class="iconify" data-icon="ic:sharp-star-rate"></span>
+              <span class="iconify" data-icon="ic:sharp-star-rate"></span>
+              <span class="iconify" data-icon="ic:sharp-star-rate"></span>
+              <span class="iconify" data-icon="ic:sharp-star-rate"></span><br /> $ 60.00<span><img
+                  src="../images/shop-img/shop6.jpg" class="ig"></span>
+            </li>
+            <li class="catlog"><a href="#" class="hov">Flower4</a><br />
+              <span class="iconify" data-icon="ic:sharp-star-rate"></span>
+              <span class="iconify" data-icon="ic:sharp-star-rate"></span>
+              <span class="iconify" data-icon="ic:sharp-star-rate"></span>
+              <span class="iconify" data-icon="ic:sharp-star-rate"></span>
+              <span class="iconify" data-icon="ic:sharp-star-rate"></span><br /> $ 50.00<span><img
+                  src="../images/shop-img/shop7.jpg" class="ig"></span>
+            </li>
+            <li class="catlog"><a href="#" class="hov">Flower5</a> <br />
+              <span class="iconify" data-icon="ic:sharp-star-rate"></span>
+              <span class="iconify" data-icon="ic:sharp-star-rate"></span>
+              <span class="iconify" data-icon="ic:sharp-star-rate"></span>
+              <span class="iconify" data-icon="ic:sharp-star-rate"></span>
+              <span class="iconify" data-icon="ic:sharp-star-rate"></span><br /> $ 80.00<span><img
+                  src="../images/shop-img/shop9.jpg" class="ig"></span>
+            </li>
+          </ul>
+        </aside>
+      </div>
+      <div class="col-sm-12 col-md-4">
+        <aside class="spce">
+          <h3 class="widget-title">PRODUCT CATEGORIES</h3>
+          <h3 class="widget-title">
+            <div class="pulline"></div>
+          </h3>
+          <ul class="list-unstyled">
+            <li class="catlog"><a href="#" class="hov">Roses</a><span>(1)</span></li>
+            <li class="catlog"><a href="#" class="hov">Marigold</a> <span>(5)</span></li>
+            <li class="catlog"><a href="#" class="hov">Lotus</a> <span>(3)</span></li>
+            <li class="catlog"><a href="#" class="hov">Lily</a> <span>(3)</span></li>
+            <li class="catlog"><a href="#" class="hov">Daisy</a> <span>(2)</span></li>
+            <li class="catlog"><a href="#" class="hov">Poppy</a> <span>(3)</span></li>
+            <li class="catlog"><a href="#" class="hov">Jasmine</a> <span>(3)</span></li>
+            <li class="catlog"><a href="#" class="hov">Violet</a> <span>(2)</span></li>
+          </ul>
+        </aside>
+        <form method="get">
+          <div class="input-group ">
+            <input type="text" class="brder rounded-3" placeholder="Search&hellip;" value="" name="s"
+              title="Search for:" />
+            <span class="input-group-btn">
+              <button type="submit" class="btn-serch btn btn-success" name="submit" id="searchsubmit"
+                value="Search">Search</button>
+            </span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!--footer-->
+  <footer class="text-center text-lg-start bg-dark text-muted ">
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom ">
+      <div class="me-5 d-none d-lg-block ">
+        <span class="animate ">Get connected with us on social networks:</span>
+      </div>
+      <div class="mx-2 ">
+        <ul>
+          <li class="list-inline-item ">
+            <a class="text-muted " href="#! "><i class="bi bi-facebook me-3 " style="color:#3b5998 "></i>
+            </a>
+          </li>
+          <li class="list-inline-item ">
+            <a class="text-muted " href="#! "><i class="bi bi-twitter me-3 " style="color:#1da1f2 "></i>
+            </a>
+          </li>
+          <li class="list-inline-item ">
+            <a class="text-muted " href="# "><i class="bi bi-youtube me-3 " style="color: #db4a39; "></i>
+            </a>
+          </li>
+          <li class="list-inline-item ">
+            <a class="text-muted " href="#! "><i class="bi bi-google me-3 " style="color: #db4a39; "></i>
+            </a>
+          </li>
+          <li class="list-inline-item ">
+            <a class="text-muted " href="#! "><i class="bi bi-instagram me-3 " style="color:#bc2a8d "></i>
+            </a>
+          </li>
+          <li class="list-inline-item ">
+            <a class="text-muted " href="#! "><i class="bi bi-github me-3 " style="color:#0e76a8 "></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class=" ">
+      <div class="container text-center text-md-start mt-5 ">
+        <div class="row mt-3 ">
+          <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mb-4 ">
+            <h6 class="text-uppercase fw-bold mb-4 ">
+              <i class="bi bi-flower3 " style="color: rgb(7, 189, 16); "></i>FLOWERS</a>
+            </h6>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur quibusdam ab fuga temporibus modi alias
+              expedita repellendus cupiditate voluptatem corrupti!
+            </p>
+          </div>
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4 ">
+            <h6 class="text-uppercase fw-bold mb-4 ">
+              We Provides
+            </h6>
+            <p>
+              <a href="# ">Birthday Party</a>
+            </p>
+            <p>
+              <a href="# ">Anniversary Party</a>
+            </p>
+            <p>
+              <a href="# " class=" ">Marriage Party</a>
+            </p>
+          </div>
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 ">
+            <h6 class="text-uppercase fw-bold mb-4 ">
+              Contact
+            </h6>
+            <p><a href="# " class="text-muted "><i class="fa fa-home me-3 text-muted "></i>Mohali</a></p>
+            <p><a href="# " class="text-muted "><i class="fa fa-envelope me-3 text-muted "></i>PV@gmail.com</a></p>
+            <p><a href="# " class="text-muted "><i class="fa fa-phone me-3 text-muted "></i> 9973376636</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="text-center p-4 " style="background-color: rgba(0, 0, 0, 0.05); ">
+      <span>© 2021 Copyright:</span>
+      <a class="text-reset fw-bold " href="# ">FLOWERS</a>
+    </div>
+  </footer>
+</body>
+
+</html>

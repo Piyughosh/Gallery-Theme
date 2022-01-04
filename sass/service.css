@@ -1,0 +1,168 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar-nav {
+  margin-right: 6%;
+}
+
+.animate {
+  position: relative;
+  -webkit-animation-name: mate;
+          animation-name: mate;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  animation-direction: alternate-reverse;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes mate {
+  0% {
+    color: red;
+  }
+  25% {
+    color: #f4f80f;
+  }
+  50% {
+    color: blue;
+  }
+  75% {
+    color: lime;
+  }
+  100% {
+    color: #ff00bf;
+  }
+}
+
+@keyframes mate {
+  0% {
+    color: red;
+  }
+  25% {
+    color: #f4f80f;
+  }
+  50% {
+    color: blue;
+  }
+  75% {
+    color: lime;
+  }
+  100% {
+    color: #ff00bf;
+  }
+}
+
+.card-text1 {
+  margin-top: 10rem;
+  color: aliceblue;
+}
+
+.bi-flower3 {
+  color: chartreuse;
+}
+
+.fa-check {
+  color: orange;
+}
+
+.section-1 {
+  background-color: #1da1f2;
+  color: aliceblue;
+}
+
+.section-2 {
+  color: #3b5998;
+  font-size: 5rem;
+}
+
+.sty {
+  background-color: black;
+  margin-top: 3%;
+  padding: 2rem;
+  width: 100%;
+  -webkit-box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.4), 0 5px 16px 0px black;
+          box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.4), 0 5px 16px 0px black;
+}
+
+.sty .miki {
+  color: white;
+  text-align: left;
+}
+
+.sty .bit {
+  background-color: red;
+  padding: 10px;
+}
+
+.sty .rounded-3 {
+  border: 1px solid black;
+  width: 100%;
+  height: 3.5rem;
+}
+
+.services .card {
+  border: 0;
+  padding: 0 30px;
+  margin-bottom: 60px;
+  position: relative;
+  background: transparent;
+}
+
+.services .card-img {
+  width: calc(100% + 60px);
+  margin-left: -30px;
+  overflow: hidden;
+  z-index: 9;
+  border-radius: 0;
+  opacity: 0.6;
+}
+
+.services .card-img:hover {
+  opacity: 1;
+  -webkit-transition: 3s;
+  transition: 3s;
+}
+
+.services .card-img img {
+  max-width: 100%;
+}
+
+.services .card-body {
+  z-index: 10;
+  background: #fff;
+  padding: 30px;
+  margin-top: -60px;
+}
+
+.services .card-body:hover {
+  border-top: 4px solid orange;
+}
+
+.services .card-title {
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+a .services .card-title:hover {
+  color: orange;
+}
+
+.services .card-title a {
+  color: #2c5477;
+}
+
+.services .card-text {
+  text-align: justify;
+}
+/*# sourceMappingURL=service.css.map */

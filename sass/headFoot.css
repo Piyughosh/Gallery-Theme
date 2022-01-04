@@ -1,0 +1,64 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar-nav {
+  margin-right: 6%;
+}
+
+.animate {
+  position: relative;
+  -webkit-animation-name: mate;
+          animation-name: mate;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  animation-direction: alternate-reverse;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes mate {
+  0% {
+    color: red;
+  }
+  25% {
+    color: #f4f80f;
+  }
+  50% {
+    color: blue;
+  }
+  75% {
+    color: lime;
+  }
+  100% {
+    color: #ff00bf;
+  }
+}
+
+@keyframes mate {
+  0% {
+    color: red;
+  }
+  25% {
+    color: #f4f80f;
+  }
+  50% {
+    color: blue;
+  }
+  75% {
+    color: lime;
+  }
+  100% {
+    color: #ff00bf;
+  }
+}
+/*# sourceMappingURL=headFoot.css.map */

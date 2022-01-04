@@ -1,0 +1,42 @@
+$primary-1: red;
+$primary-2: rgb(244, 248, 15);
+$primary-3: blue;
+$primary-4: rgb(0, 255, 0);
+$primary-5: rgb(255, 0, 191);
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+}
+.navbar-nav {
+  margin-right: 6%;
+}
+.animate {
+  position: relative;
+  animation-name: mate;
+  animation-duration: 4s;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+}
+@keyframes mate {
+  0% {
+    color: $primary-1;
+  }
+  25% {
+    color: $primary-2;
+  }
+  50% {
+    color: $primary-3;
+  }
+  75% {
+    color: $primary-4;
+  }
+  100% {
+    color: $primary-5;
+  }
+}
